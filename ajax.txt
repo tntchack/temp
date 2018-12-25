@@ -69,7 +69,13 @@ request:
 {
     حذف کردن محصول #
     'type':'delete',
-    'number':null,
+    'name':نام محصول,
+    'category':دسته محصول,
+    'price':قیمت محصول,
+    'count':تعداد محصول,
+    'description':توضیحات,
+    'photo':عکس محصول,
+    'number':شماره محصول,
 }
 
 response:
@@ -80,9 +86,11 @@ response:
     'category':دسته محصول,
     'price':قیمت محصول,
     'count':تعداد محصول,
-    'description':توضیحات,
+    'description':توضیحات,    
     'photo':عکس محصول,
     'number':شماره محصول,
+    'general_error':''
+
 }
 یا
 {
@@ -92,9 +100,10 @@ response:
     'category':بیام خطا,
     'price':بیام خطا,
     'count':بیام خطا,
-    'description':بیام خطا,
     'photo':بیام خطا,
+    'description':بیام خطا,    
     'number':بیام خطا,
+    'general_error':سایر خطا ها
 }
 
 {
@@ -104,9 +113,11 @@ response:
     'category':دسته محصول,
     'price':قیمت محصول,
     'count':تعداد محصول,
-    'description':توضیحات,
     'photo':عکس محصول,
+    'description':توضیحات,    
     'number':شماره محصول,
+    'general_error':''
+    
 }
 یا
 {
@@ -116,22 +127,47 @@ response:
     'category':بیام خطا,
     'price':بیام خطا,
     'count':بیام خطا,
-    'description':بیام خطا,
     'photo':بیام خطا,
+    'description':بیام خطا,    
     'number':بیام خطا,
+    'general_error':سایر خطا ها
+    
 }
 
 {
     حذف کردن محصول #
     'status':'ok',
+    'name':نام محصول,
+    'category':دسته محصول,
+    'price':قیمت محصول,
+    'count':تعداد محصول,
+    'photo':عکس محصول,
+    'description':توضیحات,    
     'number':شماره محصول,
+    'general_error':''    
 }
 یا
 {
     حذف کردن محصول #
     'status':'not_ok',
+    'name':بیام خطا,
+    'category':بیام خطا,
+    'price':بیام خطا,
+    'count':بیام خطا,
+    'description':بیام خطا,
+    'photo':بیام خطا,
+    'description':بیام خطا,    
     'number':بیام خطا,
+    'general_error': سایر خطاها   
 }
+
+2- ارسال دسته بندی ها
+url : /statistic/get_categories
+
+request:
+
+response:
+{'categories':[دسته بندی ها]}
 
 سایر :
 
@@ -139,7 +175,7 @@ response:
 در صفحه آمار و میز کار
 url : /status/sell
 
-request:get
+request:
 
 response:
 {
@@ -151,7 +187,7 @@ response:
 اگر درون بخش فعال صفحه بود بروز رسانی انجام بگیرد
 url : status/warehouse_summary
 
-request:get
+request:
 
 response:
 {
@@ -166,14 +202,14 @@ response:
     .
 }
 
-3- بروز رسانی تراکنش ها
+3- بروز رسانی سفارش
 url : status/update_trans
 
-request:get
+request:
 
 response:
 {
-    product_uuid(همون شماره محصول):
+    transaction_uuid(همون شماره تراکنش):
         {
             'status':'new',
             'name':نام خریدار,
@@ -201,31 +237,31 @@ response:
                 ]
 
         },
-    product_uuid(همون شماره محصول):
+   transaction_uuid(همون شماره تراکنش):
         {
             'status':'accepted'
         },
-    product_uuid(همون شماره محصول):
+    transaction_uuid(همون شماره تراکنش):
         {
             'status':'paid'
         },
-    product_uuid(همون شماره محصول):
+    transaction_uuid(همون شماره تراکنش):
         {
             'status':'searching_courier'
         },
-    product_uuid(همون شماره محصول):
+    transaction_uuid(همون شماره تراکنش):
         {
             'status':'coming_courier'
         },
-    product_uuid(همون شماره محصول):
+    transaction_uuid(همون شماره تراکنش):
         {
             'status':'sending_courier'
         },
-    product_uuid(همون شماره محصول):
+    transaction_uuid(همون شماره تراکنش):
         {
             'status':'delivered_courier'
         },
-    product_uuid(همون شماره محصول):
+    transaction_uuid(همون شماره تراکنش):
         {
             'status':'courier_not_found'
         },
@@ -233,7 +269,7 @@ response:
 
 صفحه میز کار:
 
-1- تغییر ویرایش یا حرف تراکنش
+1- تایید ویرایش یا حذف تراکنش
 url : transaction/change
 
 request:
@@ -250,7 +286,6 @@ request:
 {
     'number': شماره تراکنش,
     'type':'edit'
-    'status':'new',
     'name':نام خریدار,
     'phone':شماره ثابت,
     'mobile': شماره همراه,,
