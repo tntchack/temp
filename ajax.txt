@@ -2,7 +2,7 @@
 
 
 1- نمایش آمار فروش انتخابی
-url : /statistic/get_stat
+url : /status/get_statistic
 
 request:
 {
@@ -41,7 +41,7 @@ response:
 صفحه انبار:
 
 1- ویرایش حدف یا اضافه کردن محصول
-url : /statistic/change
+url : /status/change_product
 
 request:
 {
@@ -162,7 +162,7 @@ response:
 }
 
 2- ارسال دسته بندی ها
-url : /statistic/get_categories
+url : /status/get_categories
 
 request:
 
@@ -173,7 +173,7 @@ response:
 
 1- بروز رسانی فروش کل و فروش سی روز اخیر
 در صفحه آمار و میز کار
-url : /status/sell
+url : /status/get_sell
 
 request:
 
@@ -270,7 +270,7 @@ response:
 صفحه میز کار:
 
 1- تایید ویرایش یا حذف تراکنش
-url : transaction/change
+url : status/change_trans
 
 request:
 {
