@@ -2,7 +2,7 @@
 
 
 1- نمایش آمار فروش انتخابی
-url : /status/get_statistic
+url : /status/get_stat
 
 request:
 {
