@@ -10,7 +10,6 @@ request:
     'end_date': تا تاریخ,
     'product':نام محصول,
     'category': دسته محصول,
-    'bot':بات,
 }
 
 response:
@@ -19,22 +18,14 @@ response:
     'table':[
                 {
                     'date':تاریخ,
-                    'bale_sell':فروش بله,
-                    'gap_sell':فروش گب,
+                    'gap_sell': gap_sell,
+                    'bale_sell': bale_sell,
+                    'telegram_sell': telegram_sell,
+                    'sorush_sell': sorush_sell,
+                    'direct_sell': direct_sell,
                     'total': کل فروش
                 },
-                {
-                    'date':تاریخ,
-                    'bale_sell':فروش بله,
-                    'gap_sell':فروش گب,
-                    'total': کل فروش
-                },
-                {
-                    'date':تاریخ,
-                    'bale_sell':فروش بله,
-                    'gap_sell':فروش گب,
-                    'total': کل فروش
-                }
+
             ]
 }
 
@@ -52,7 +43,7 @@ request:
     'price':قیمت محصول,
     'count':تعداد محصول,
     'description':توضیحات,
-    'photo':عکس محصول,
+    'image':عکس محصول,
     'number':null,
 }
 {
@@ -63,7 +54,7 @@ request:
     'price':قیمت محصول,
     'count':تعداد محصول,
     'description':توضیحات,
-    'photo':عکس محصول,
+    'image':عکس محصول,
     'number':null,
 }
 {
@@ -74,7 +65,7 @@ request:
     'price':قیمت محصول,
     'count':تعداد محصول,
     'description':توضیحات,
-    'photo':عکس محصول,
+    'image':عکس محصول,
     'number':شماره محصول,
 }
 
