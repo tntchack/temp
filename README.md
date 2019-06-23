@@ -24,7 +24,7 @@ news, map, exhibition, account, api
 
 شامل وب پنل های نمایشگاه دار (exhibition manager) و پیمانکار (contractor) با دو سطح دسترسی متفاوت
 
-و شامل مدل های Exhibition, Booth,
+شامل مدل های Exhibition, Booth,
 
 ### account
 اپلیکیشن حساب کاربری که اطلاعات مربوط به کاربران، پروفایل های کاربر، سطوح دسترسی، رسید های خرید و تراکنش های مالی، اعلان ها در آنها بوسیله این اپلیکیشن مدیریت می شود.
@@ -32,4 +32,9 @@ news, map, exhibition, account, api
 شامل view های login, login-redirect, logout, logout-then-login
 
 شامل مدل های Profile, OrganizationProfile, NewsProfile, PersonProfile, PaymentReceipt, Notification
+
+### api
+
+شامل تمام api های پیاده سازی شده برای ارتباط با اپ موبایل
+
 </div>
