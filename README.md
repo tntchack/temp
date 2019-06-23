@@ -18,6 +18,35 @@ news, map, exhibition, account, api
 
 پیمانکار : کاربری که از طریق وب پنل امکان تعریف غرفه های جدید برای یک نمایشگاه و ویرایش اطلاعات غرفه ها را دارد
 
+
+## پیش نیاز ها
+
+در این پروژه از این کتاب خانه ها استفاده شده است:
+
+celery 4.3.0
+
+django 1.11.20
+
+django-jalali 2.4.6
+
+django-taggit 1.1.0
+
+djangorestframework 3.9.3
+
+djangorestframework-simplejwt 4.3.0
+
+jdatetime 3.2.0
+
+mysqlclient 1.4.2
+
+Pillow 6.0.0
+
+sorl-thumbnail 12.5.0
+
+## اپلیکیشن ها
+
+پروژه شمال ۵ اپلیکیشن مجزا است که توضیاحات هرکدام به شرح زیر است:
+
 ### news
 اطلاعات مربوط به بخش اخبار اپ موبایل بوسیله این اپلیکیشن مدیریت میشود
 
@@ -48,28 +77,7 @@ news, map, exhibition, account, api
 
 شامل تمام api های پیاده سازی شده برای ارتباط با اپ موبایل
 
-## پیش نیاز ها
+## پروفایل های کاربری
 
-در این پروژه از این کتاب خانه ها استفاده شده است:
-
-celery 4.3.0
-
-django 1.11.20
-
-django-jalali 2.4.6
-
-django-taggit 1.1.0
-
-djangorestframework 3.9.3
-
-djangorestframework-simplejwt 4.3.0
-
-jdatetime 3.2.0
-
-mysqlclient 1.4.2
-
-Pillow 6.0.0
-
-sorl-thumbnail 12.5.0
-
+به منظور مدیریت دسترسی ها و ذخیره اطلاعات اضافه 
 </div>
