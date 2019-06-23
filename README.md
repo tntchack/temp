@@ -22,7 +22,9 @@ news, map, exhibition, account, api
 و شامل مدل های Exhibition, Booth, 
 
 ### account
-اپلیکیشن حساب کاربری که اطلاعات مربوط به کاربران، پروفایل های کاربران و سطوح دسترسی آنها بوسیله این اپلیکیشن مدیریت می شود.
+اپلیکیشن حساب کاربری که اطلاعات مربوط به کاربران، پروفایل های کاربر، سطوح دسترسی، رسید های خرید و تراکنش های مالی، اعلان ها در آنها بوسیله این اپلیکیشن مدیریت می شود.
+
 شامل view های login, login-redirect, logout, logout-then-login
+
 شامل مدل های Profile, OrganizationProfile, NewsProfile, PersonProfile, PaymentReceipt, Notification
 </div>
