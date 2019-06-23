@@ -48,4 +48,28 @@ news, map, exhibition, account, api
 
 شامل تمام api های پیاده سازی شده برای ارتباط با اپ موبایل
 
+## پیش نیاز ها
+
+در این پروژه از این کتاب خانه ها استفاده شده است:
+
+celery 4.3.0
+
+django 1.11.20
+
+django-jalali 2.4.6
+
+django-taggit 1.1.0
+
+djangorestframework 3.9.3
+
+djangorestframework-simplejwt 4.3.0
+
+jdatetime 3.2.0
+
+mysqlclient 1.4.2
+
+Pillow 6.0.0
+
+sorl-thumbnail 12.5.0
+
 </div>
